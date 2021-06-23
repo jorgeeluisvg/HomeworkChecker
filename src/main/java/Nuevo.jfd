@@ -1,0 +1,77 @@
+JFDML JFormDesigner: "7.0.4.0.360" Java: "11.0.9.1" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+			name: "this"
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+				"$horizontalGroup": "par l {comp contentPanel:::p::p}"
+				"$verticalGroup": "par l {comp contentPanel:::p::p}"
+			} ) {
+				name: "dialogPane"
+				"border": new javax.swing.border.EmptyBorder( 12, 12, 12, 12 )
+				"background": new java.awt.Color( 51, 51, 51, 255 )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+					"$horizontalGroup": "par l {seq {space :p:147:p, par l {comp passpp:::p::p, comp userr:::p::p}, space ::157:x}, seq t {space ::247:x, comp button1:::p:177:p, space :p:215:p}}"
+					"$verticalGroup": "par l {seq l {space :p:67:p, comp userr:::p::p, space :p:64:p, comp passpp:::p::p, space ::31:x, comp button1:::p:40:p, space :p:23:p}}"
+				} ) {
+					name: "contentPanel"
+					"background": new java.awt.Color( 51, 51, 51, 255 )
+					add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+						"$horizontalGroup": "par l {seq {space :::p, comp usfoto:::p:60:p, space u:::p, par l {seq {comp userr_input:::p:239:p, space :0:6:x}, comp separator1:::::x}, space :::p}}"
+						"$verticalGroup": "par l {seq {space :p:14:p, comp userr_input:::p:31:p, space :::p, comp separator1:::::x}, seq l {comp usfoto:::p:60:p, space :0:0:x}}"
+					} ) {
+						name: "userr"
+						"background": new java.awt.Color( 51, 51, 51, 255 )
+						add( new FormComponent( "javax.swing.JTextField" ) {
+							name: "userr_input"
+							"font": new java.awt.Font( "Consolas", 1, 20 )
+							"disabledTextColor": new java.awt.Color( 0, 0, 0, 255 )
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "usfoto"
+							"icon": new com.jformdesigner.model.SwingIcon( 0, "/img/user.png" )
+						} )
+						add( new FormComponent( "javax.swing.JSeparator" ) {
+							name: "separator1"
+							"background": sfield java.awt.Color black
+							"foreground": &Color0 new java.awt.Color( 0, 0, 0, 255 )
+						} )
+					} )
+					add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+						"$horizontalGroup": "par l {seq {space :::p, comp passfoto:::p:60:p, space :p:12:p, par l {comp pass_input:::::x, seq {comp separator3:::p:239:p, space :0:0:x}}, space :::p}}"
+						"$verticalGroup": "par l {seq l {par t {seq {space :::p, comp pass_input:::p:36:p, space :::x, comp separator3:::p:9:p}, comp passfoto:::p:60:p}, space :0:0:x}}"
+					} ) {
+						name: "passpp"
+						"background": new java.awt.Color( 51, 51, 51, 255 )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "passfoto"
+							"icon": new com.jformdesigner.model.SwingIcon( 0, "/img/pass.png" )
+						} )
+						add( new FormComponent( "javax.swing.JPasswordField" ) {
+							name: "pass_input"
+							"font": new java.awt.Font( "Consolas", 1, 20 )
+						} )
+						add( new FormComponent( "javax.swing.JSeparator" ) {
+							name: "separator3"
+							"background": sfield java.awt.Color black
+							"foreground": #Color0
+						} )
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "button1"
+						"text": "Registrar"
+						"font": new java.awt.Font( "Consolas", 1, 26 )
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button1ActionPerformed", true ) )
+					} )
+				} )
+			}, new FormLayoutConstraints( class java.lang.String ) {
+				"value": "Center"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 665, 410 )
+		} )
+	}
+}
