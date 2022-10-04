@@ -24,3 +24,4 @@ make sure to have chromedriver inside your windows folder.
 [Chromedriver](https://chromedriver.chromium.org/downloads)
 
   
+![image](https://user-images.githubusercontent.com/73260922/193913822-ffd15886-19c4-452c-8c13-c69b1edfea8b.png)
